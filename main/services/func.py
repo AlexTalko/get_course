@@ -9,7 +9,7 @@ def time_now():
 
 
 def compare_time_requests(b):
-    """Сравнивает время запроса в Unix timestamp. Если не прошло 10 секунд возвращает False"""
+    """Сравнивает время запроса в Unix timestamp. Если прошло >= 10 секунд возвращает True"""
     a = time_now()
-    if a - b < 10:
-        exit()
+    if a - b > 10:
+        return True
