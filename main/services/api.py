@@ -13,7 +13,7 @@ class API(ABC):
 
 
 class APICourse(API):
-    """Класс для получения курса доллара к рублю с https://api.currencylayer.com/live"""
+    """Класс для получения курса доллара к рублю с https://currencylayer.com/dashboard"""
 
     def get_course(self):
         response = requests.get(
